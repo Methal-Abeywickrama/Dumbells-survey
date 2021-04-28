@@ -1,0 +1,90 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<head> 
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+
+<link>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<main>
+  <div id="welcome-section"> 
+  <h1 id="title"><strong>Dum guyz Dumbells <br> Customer preference survey form</strong></h1>
+  </div>
+  
+ <img src="https://res.cloudinary.com/dpj6puz8g/image/upload/v1619346267/download_am15bi.png" alt="Man holding two dumbells">
+  
+  <p id="description"> Please take your time to answer these questions so that we can provide you a better experience<p>
+  <br><br>
+  <hr>
+  
+  <br><br>
+    
+    <form id="survey-form">
+      <label for="name" id="name-label">Your name</label>
+      <br>
+      <input type="text"id="name" placeholder="name" class="box-size" required>
+      <br>
+      <br>
+      <label for="email" id="email-label">Enter your email here</label>
+      <br>
+      <input class="box-size" type="email" id="email" placeholder="youremail@example.com" required>
+      <br>
+      <br>
+      <label for="age"> Your age</label>
+      <br>
+      <input class="box-size" id="age" type ="text"placeholder="optional">
+      <br>
+      <br>
+      <label for="number" id="number-label"> Your contact number</label>
+      <br>
+      <input class="box-size" id="number"type="number" min="100000000"max="9999999999" placeholder="(000)">
+      <br>
+      <br>
+      
+      <label for="dropdown"> Select your weight category</label>
+      <br>
+      <select class="box-size" id="dropdown" required>
+        <option id="1-50kg">1-50kg</option>
+        <option id="50-100kg">50-100kg</option>
+        <option id="100-200kg">100-200kg</option>
+        <option id="pnts">Prefer not to say</option>
+      </select>
+      <p> What is your most preferred form of working with heavy weights?</p>
+      <label class="listlabels" for="bench">Doing benchpresses</label>
+      <input id="bench" name="exercise" type="radio" value="bench">
+      <br>
+      <label class="listlabels" for="stand">Standing weightlifting</label>
+      <input name="exercise"id="stand" value="stand" type="radio">
+      <br>
+      <p> Select your preferred weight categories</p>
+      <div id="checkboxes">
+      <label class="listlabels" for="10-30">10 to 30kg</label>
+      <input id="10-30" type="checkbox"name="weight" value="10-30">
+      <br>
+      <label class="listlabels" for="30-50">30 to 50kg</label>
+      <input id="30-50"  value="30-50" name="weight" type="checkbox">
+      <br>
+      <label class="listlabels" id="50-100">50 to 100kg</label>
+      <input id="50-100"name="weight" type="checkbox" value="50-100">
+      <br>
+      <label class="listlabels" id="100-200">100 to 200kg</label>
+      <input class="lists" id="100-200"name="weight" type="checkbox" value="100-200">
+  </div>
+      <br>
+      <br>
+      <label for="comments"> Additional Comments</label>
+      <br>
+      <textarea id="comments" >Enter your comments here</textarea>
+      <br>
+      <br>
+      <button type="submit" id="submit">Submit</button>
+      
+      
+      
+      
+    </form>
+</main>
